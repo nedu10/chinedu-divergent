@@ -1,18 +1,29 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <app-navbar />
+    <app-header />
+    <app-start-earning />
+    <app-perks />
+    <app-one-click-away />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import appNavbar from "@/components/Navbar.vue";
+import appHeader from "@/components/Header.vue";
+import appStartEarning from "@/components/StartEarning.vue";
+import appPerks from "@/components/Perks.vue";
+import appOneClickAway from "@/components/OneClickAway.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    HelloWorld
+    appNavbar,
+    appHeader,
+    appStartEarning,
+    appPerks,
+    appOneClickAway
   }
-}
+};
 </script>
