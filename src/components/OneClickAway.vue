@@ -10,7 +10,7 @@
         </p>
         <div class="mx-auto">
           <button
-            class="btn btn-success c-btn-sec mx-auto"
+            class="btn c-btn-sec btn-success  mx-auto"
             style="    display: block;"
           >
             Become a stun
@@ -24,13 +24,16 @@
 .one-click-away {
   background: #760000;
 }
-.c-btn-sec {
-  box-shadow: 0px 11px 12px rgba(0, 0, 0, 0.179469);
+.c-btn-sec,
+.c-btn-sec:active,
+.c-btn-sec:hover,
+.c-btn-sec:visited {
+  box-shadow: 0px 11px 12px rgba(0, 0, 0, 0.179469) !important;
   padding: 0.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  background: white;
-  color: #760000;
-  border: 2px solid white;
+  background: white !important;
+  color: #760000 !important;
+  border: 2px solid white !important  ;
 }
 </style>

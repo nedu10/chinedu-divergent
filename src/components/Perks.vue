@@ -2,16 +2,16 @@
   <div class="perks pb-5">
     <div class="container py-5">
       <p class="perk-head c-text-primary">perks</p>
-      <div class="row px-5">
-        <div class="col-md-7 ">
+      <div class="row px-2 px-md-5">
+        <div class="col-11 col-md-7 ">
           <h4 class="c-start-earning-text__v2">
             At Stan Social, you enjoy
           </h4>
           <div class="d-flex my-2" v-for="(perk, index) in perks" :key="index">
-            <div class="col-1 c-perk-numbering">
+            <div class="col-2 col-sm-1 c-perk-numbering">
               <a class="text-white c-centering">{{ index + 1 }}</a>
             </div>
-            <div class="col-11">
+            <div class="col-10 col-sm-11">
               <h6 class="text-white">
                 {{ perk.name }}
               </h6>
@@ -21,7 +21,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-5 ">
+        <div class="col-md-5 d-none d-md-block">
           <div class="h-100 perk-image w-100"></div>
         </div>
       </div>
@@ -65,6 +65,16 @@ export default {
   margin-right: 0;
   min-width: 110% !important;
   background-color: #292d33;
+}
+
+@media (max-width: 992px) {
+  .perks {
+    margin-top: 5rem;
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 110% !important;
+    background-color: #292d33;
+  }
 }
 .perk-head:before {
   content: url("/svgs/perk-head.svg");

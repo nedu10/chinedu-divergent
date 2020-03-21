@@ -1,8 +1,8 @@
 <template>
   <div class="header container">
     <div class="d-flex">
-      <div class="col-md-5">
-        <h1 class="heading mt-5 pt-5">
+      <div class="col-12 col-md-9 col-lg-5">
+        <h1 class="heading header-md mt-5 pt-5">
           Earn freebies with your active social media account!
         </h1>
         <small class="text-white">Become a Mini-Social Influencer</small>
@@ -12,8 +12,11 @@
           </button>
         </div>
       </div>
-      <div class="translated-div"></div>
-      <img class="translated-div-image" src="/svgs/header1.svg" />
+      <div class="translated-div d-none d-lg-block"></div>
+      <img
+        class="translated-div-image d-none d-lg-block"
+        src="/svgs/header1.svg"
+      />
     </div>
   </div>
 </template>
@@ -28,6 +31,11 @@ export default {
 </script>
 
 <style scoped>
+@media (max-width: 576px) {
+  .heading {
+    font-size: 50px !important;
+  }
+}
 .heading {
   font-style: normal;
   font-weight: 600;

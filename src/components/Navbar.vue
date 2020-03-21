@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="navbar navbar-expand-lg navbar-light bg-transparant container py-4"
+    class="navbar navbar-expand-md navbar-light bg-transparant container py-4"
   >
     <a class="navbar-brand" href="#">
       <img src="/svgs/logo.svg" />
